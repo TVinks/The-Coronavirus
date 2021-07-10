@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>The Coronavirus</title>
+    <link rel="stylesheet" href="theme.css" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="header">
+            <h1>THE CORONAVIRUS</h1>
+            <img id=logo src="logotrans.png" style=width:6.5%>
+        </div>
+
+        <nav>
+
+            <div class="dropdown_div">
+                <a href="index.html" class="dropdown_button"><i class="fa fa-home" style="font-size: 20px;"></i> Home</a>
+            </div>
+
+            <div class="dropdown_div">
+                <button class="dropdown_button"><i class="fa fa-info-circle" style="font-size: 18px;"></i> All You Need To Know</button>
+                <div class="dropdown_content">
+                    <a href="all.html#what">What is It?</a>
+                    <a href="all.html#avoid">How To Avoid</a>
+                    <a href="all.html#symptoms">Symptoms</a>
+                    <a href="all.html#spread">How It Spreads</a>
+                    <a href="myths.html">Myths</a>
+                    <a href="have.html#think">What To Do If You Think You Have It</a>
+                    <a href="have.html#do">What To Do If You Have It</a>
+                    <a href="like.html">Likeliness Of Catching It</a>
+                </div>
+            </div>
+
+            <div class="dropdown_div">
+                <button class="dropdown_button"><i class="fa fa-map" style="font-size: 15.5px;"></i> Geography</button>
+                <div class="dropdown_content">
+                    <a href="map.html">World Map</a>
+                    <a href="area.html#ban">Travel Ban List</a>
+                    <a href="area.html#lock">Areas Locked Down NSW</a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="slideshow_div1">
+                <img class="slides" src="T1.jpg">
+                <img class="slides" src="T2.jpg">
+                <img class="slides" src="T3.webp">
+            </div>
+
+            <script type="text/javascript">
+                var myIndex = 0;
+                function slideshow() {
+                    var item;
+                    var slides = document.getElementsByClassName("slides");
+                    for (item = 0; item < slides.length; item++) {
+                        //slides[item].style.display = "none";
+                        slides[item].classList.remove("shown"); //removes the class shown which makes it show up
+                    }
+                    myIndex++;
+                    if (myIndex > slides.length) {
+                        myIndex = 1;
+                    }
+                    // slides[myIndex - 1].style.display = "block";
+                    slides[myIndex - 1].classList.add("shown"); //adds the class shown which makes it show up
+                    setTimeout(slideshow, 4000);
+                }
+                slideshow();
+            </script>
+
+            <div id="text-block-area">
+                <h1>Lockdowns In NSW And Travel Bans</h1>
+            </div>
+        </div>
+    </main>
+
+    <div class="wrapper">
+        <div class="content">
+            <h6 id="ban" >List Of Australian Travel Bans</h6>
+            <p> Australians are advised to avoid all non-essential domestic travel in order to reduce spread of the virus. All oversees travel is currently banned with very few exceptions (you are only able to leave Australia with an exemption from the Department of Home Affairs). If it is completely VITAL for you to travel then make sure you take all the precautions <a class="link" href="all.html#avoid">seen here</a>.
+            </p>
+            <img src="travel.webp" alt="Where not to travel" style="width:100%">
+            <h6 id="lock" >Areas Locked Down In NSW</h6>
+            <p>As of the 8th of July, lockdown within NSW has been extended until 11:59pm on Friday, the 16th July, based on recent health advice from Dr Kerry Chant to reduce community transmission.</p>
+            <p>You must stay at home unless going to work (if you can't work at home), school (if completely unable to complete online learning), shopping for foods and essentials, getting medical care or supplies, exercise. You may only leave home with a reasonable excuse. <br><br>
+                If you must leave your home, it is advised to not leave your local area if you can avoid it. The amount of distance you need between the next person is dependent on the number of people in the area and can be found <a href="https://www.nsw.gov.au/covid-19/rules/square-metres-rules" target="_blank" class="link">here</a>.<br><br>
+                More information on lockdowns within NSW can be found <a href="https://www.nsw.gov.au/covid-19" target="_blank" class="link">here</a>.</p>
+                <img src="https___prod.static9.net.png" alt="Don't leave your home" style="width:70%">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>&copy; Thom Vinks 2021</p>
+    </div>
+    <script src="https://covid19api-api.glitch.me/api.js"></script>
+</body>
+
+</html>

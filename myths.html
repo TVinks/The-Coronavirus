@@ -1,0 +1,185 @@
+<html>
+
+<head>
+    <title>The Coronavirus</title>
+    <link rel="stylesheet" href="theme.css" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="header">
+            <h1>THE CORONAVIRUS</h1>
+            <img id=logo src="logotrans.png" style=width:6.5%>
+        </div>
+
+        <nav>
+
+            <div class="dropdown_div">
+                <a href="index.html" class="dropdown_button"><i class="fa fa-home" style="font-size: 20px;"></i> Home</a>
+            </div>
+
+            <div class="dropdown_div">
+                <button class="dropdown_button"><i class="fa fa-info-circle" style="font-size: 18px;"></i> All You Need To Know</button>
+                <div class="dropdown_content">
+                    <a href="all.html#what">What is It?</a>
+                    <a href="all.html#avoid">How To Avoid</a>
+                    <a href="all.html#symptoms">Symptoms</a>
+                    <a href="all.html#spread">How It Spreads</a>
+                    <a href="myths.html">Myths</a>
+                    <a href="have.html#think">What To Do If You Think You Have It</a>
+                    <a href="have.html#do">What To Do If You Have It</a>
+                    <a href="like.html">Likeliness Of Catching It</a>
+                </div>
+            </div>
+
+            <div class="dropdown_div">
+                <button class="dropdown_button"><i class="fa fa-map" style="font-size: 15.5px;"></i> Geography</button>
+                <div class="dropdown_content">
+                    <a href="map.html">World Map</a>
+                    <a href="area.html#ban">Travel Ban List</a>
+                    <a href="area.html#lock">Areas Locked Down NSW</a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="slideshow_div1">
+                <img class="slides" src="MC1.jpg" >
+                <img class="slides" src="MC2.webp" >
+                <img class="slides" src="MC3.jpg">
+            </div>
+
+            <script type="text/javascript">
+                var myIndex = 0;
+                function slideshow() {
+                    var item;
+                    var slides = document.getElementsByClassName("slides");
+                    for (item = 0; item < slides.length; item++) {
+                        //slides[item].style.display = "none";
+                        slides[item].classList.remove("shown"); //removes the class shown which makes it show up
+                    }
+                    myIndex++;
+                    if (myIndex > slides.length) {
+                        myIndex = 1;
+                    }
+                    // slides[myIndex - 1].style.display = "block";
+                    slides[myIndex - 1].classList.add("shown"); //adds the class shown which makes it show up
+                    setTimeout(slideshow, 4000);
+                }
+                slideshow();
+            </script>
+
+            <div id="text-block1">
+                <h1 style="padding-left: 25px; padding-right: 25px;">Myths</h1>
+            </div>
+        </div>
+    </main>
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="vertical-menu">
+                <section id="red">
+                <a class="activered">Myths On This Page:</a>
+               </section>
+                <a href="#elderly">Only The Elderly Can Get Coronavirus</a>
+                <a href="#flu">Coronavirus Is Just Like The Flu</a>
+                <a href="#mask">Facemasks Prevent Coronavirus</a>
+                <a href="#bio">Antibiotics Kill Coronavirus</a>
+                <a href="#parcel">Parcels, Letters And Packages Can Carry Coronavirus</a>
+                <a href="#sauna">Coronavirus Will Die If You Go Into A Sauna Or A Hot Environment</a>
+                <a href="#bat">Coronavirus Came From Eating Bats</a>
+                <a href="#lab">The Virus Originated In A Lab In China</a>
+                <a href="#bite">Coronavirus Can Be Transmitted Through Insect Bites</a>
+                <a href="#dryer">Hand Dryers Kill The Virus</a>
+              </div>
+            <h3 id="elderly">Only The Elderly Can Get The Coronavirus</h3>
+            <p> This is not true. Coronavirus can infect anyone, whether it be someone completely healthy or someone who
+                is not nearly as healthy.
+                <br> <br>
+                Although this is the case, elderly people and people who have health conditions such as diabetes or
+                asthma have a much higher chance of becoming severely ill.</p>
+            <img class="contentimg" src="M1.jpg" alt="Coronavirus" style="width:50%">
+            <div>
+                <h3 id="flu">Coronavirus Is Just Like The Flu</h3>
+                <p> No this is not the case. Although they have very similar symptoms such as aches, fever, and coughs,
+                    coronavirus is estimated to have a higher fatality rate in terms of percentages. Although the
+                    coronavirus is more deadly, the flu still can kill not as healthy indiciduals, both having the
+                    possibility to cause pneumonia.</p>
+                <img class="contentimg" src="M2.webp" alt="Coronavirus" style="width:70%">
+            </div>
+            <h3 id="mask">Facemasks Prevent Coronavirus</h3>
+            <p>No, unfortunately this is not entirely true, although, you should definately wear a wask if possible if your
+                local area has COVID or if your local government recommend it. Healthcare workers use professional grade face masks, which
+                fit tightly around the face, to protect them against infection. However, disposable face masks are
+                unlikely to provide such protection and can end up not being able to help at all. As these masks don't
+                fit close enough to prevent anything from getting in, droplets containing covid-19 are able to easily go
+                through the mask and into your system. Even some tiny particles are able to go straight through the mask
+                as well. <br> <br>
+                However, if someone has does have the virus (or any other respiratory virus), wearing a mask can help
+                protect others from becoming infected. It is important for everyone to wear a mask in infected areas
+                so that individuals who have COVID and do not know it are unnable to spread the dissease. This means 
+                that if you do have it you should definately wear a mask to prevent the spread of the virus.
+            </p>
+            <img class="contentimg" src="M3.webp" alt="Mask" style="width: 70%;">
+            <h3 id="bio">Antibiotics Kill Coronavirus</h3>
+            <p>No, this is not true. Antibiotics are only able to kill bacteria and won't do anything to fight the
+                virus.</p>
+            <img src="M4.jpg" alt="Antibiotics" style="width: 70%;">
+            <h3 id="parcel">Parcels, Letters And Packages Can Carry Coronavirus</h3>
+            <p>No, this does not happen. As coronavirus isn't very good at staying alive on surfaces for longer periods
+                of time, it means that even if a package had coronavirus, it would most likely die by the time it reched
+                your location.</p>
+            <img src="M5.jpg" alt="Parcel" style="width: 70%;">
+            <h3 id="sauna">Coronavirus Will Die If You Go Into A Sauna Or A Hot Environment</h3>
+            <p>No, temperatures in a saunas or hot environments won't be hot enough to kill the virus. You would most
+                likely have heat stroke before you kill the virus within your body.</p>
+            <img src="M6.jpg" alt="Sauna" style="width: 50%;">
+            <h3 id="bat">Coronavirus Came From Eating Bats</h3>
+            <p>This is most likely not the case. It is believed that the virus was spread from bats to humans through a
+                marketplace. It is also believed that the virus spread from the bat to another animal which gave it to
+                humans. This intermediary has not been found yet but researchers believe that it could have been a
+                snake, a turtle or a pangolin.</p>
+            <img src="M7.webp" alt="Bat" style="width: 60%;">
+            <h3 id="lab">The Virus Originated In A Lab In China</h3>
+            <p>This is definately not the case. Although a large amount of individuals online believe that the virus
+                began in a lab in Wuhan there is no evidence which supports this theory. In fact, a recent study
+                demonstrates that the virus is a natural product of evolution. This virus was believed to start from a
+                snake, a turtle or a pangolin in a marketplace in Wuhan.</p>
+            <img src="M8.webp" alt="Lab" style="width: 50%;">
+            <h3 id="bite">Coronavirus Can Be Transmitted Through Insect Bites</h3>
+            <p>No it cannot. There is no evidance which suggests that it can be transmitted through a bite from an
+                insect.</p>
+            <img src="M9.webp" alt="Mosquito" style="width: 50%;">
+            <h3 id="dryer">Hand Dryers Kill The Virus</h3>
+            <p>No, hand dryers are not effective at killing the virus. Hand dryers might even be more dangerous than
+                beneificial, flying the bacteria and viruses everywhere, including possibly your eyes, nose or mouth.
+            </p>
+            <img id="contentimg1" src="M10.jpg" alt="Hand Dryer" style="width: 60%;">
+            <section class="mythsButtonContainer">
+                <a href="have.html" class="button3">If You Have It</a>
+            </section>
+            <!--NEW-->
+        </div>
+        <!--OLD<a href="have.html" class="button3">If You Have It</a>-->
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+
+    <div class="footer">
+        <p>&copy; Thom Vinks 2021</p>
+    </div>
+    <script src="https://covid19api-api.glitch.me/api.js"></script>
+</body>
+
+</html>

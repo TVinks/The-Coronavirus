@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <title>The Coronavirus</title>
+    <link rel="stylesheet" href="theme.css" type="text/css" />
+    <link rel="shortcut icon" href="logotrans.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="header">
+            <h1>THE CORONAVIRUS</h1>
+            <img id=logo src="logotrans.png" style=width:6.5% >
+        </div>
+
+        <nav>
+
+            <div class="dropdown_div">
+                <a href="index.html" class="dropdown_button"><i class="fa fa-home" style="font-size: 20px;"></i> Home</a>
+            </div>
+
+            <div class="dropdown_div">
+                <button class="dropdown_button"><i class="fa fa-info-circle" style="font-size: 18px;"></i> All You Need To Know</button>
+                <div class="dropdown_content">
+                    <a href="all.html#what">What is It?</a>
+                    <a href="all.html#avoid">How To Avoid</a>
+                    <a href="all.html#symptoms">Symptoms</a>
+                    <a href="all.html#spread">How It Spreads</a>
+                    <a href="myths.html">Myths</a>
+                    <a href="have.html#think">What To Do If You Think You Have It</a>
+                    <a href="have.html#do">What To Do If You Have It</a>
+                    <a href="like.html">Likeliness Of Catching It</a>
+                </div>
+            </div>
+
+            <div class="dropdown_div">
+                <button class="dropdown_button"><i class="fa fa-map" style="font-size: 15.5px;"></i> Geography</button>
+                <div class="dropdown_content">
+                    <a href="map.html">World Map</a>
+                    <a href="area.html#ban">Travel Ban List</a>
+                    <a href="area.html#lock">Areas Locked Down NSW</a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="slideshow_div1">
+                <img class="slides" src="C5.webp" >
+                <img class="slides" src="C6.jpg" >
+                <img class="slides" src="C7.jpeg" >
+            </div>
+
+            <script type="text/javascript">
+                var myIndex = 0;
+                function slideshow() {
+                    var item;
+                    var slides = document.getElementsByClassName("slides");
+                    for (item = 0; item < slides.length; item++) {
+                        //slides[item].style.display = "none";
+                        slides[item].classList.remove("shown"); //removes the class shown which makes it show up
+                    }
+                    myIndex++;
+                    if (myIndex > slides.length) {
+                        myIndex = 1;
+                    }
+                    // slides[myIndex - 1].style.display = "block";
+                    slides[myIndex - 1].classList.add("shown"); //adds the class shown which makes it show up
+                    setTimeout(slideshow, 4000);
+                }
+                slideshow();
+            </script>
+
+            <div class="text-block">
+                <h1 class="lol">All You Need To Know</h1>
+            </div>
+        </div>
+    </main>
+
+    <div class="wrapper">
+        <div class="content">
+            <div class="vertical-menu">
+                <a class="active">What's On This Page:</a>
+                <a href="#what">What Is It?</a>
+                <a href="#avoid">How To Avoid It</a>
+                <a href="#symptoms">It's Symptoms</a>
+                <a href="#spread">How It Spreads</a>
+              </div>
+            <h2 id="what">What Is A Coronavirus?</h2>
+            <p>A coronavirus is a family of viruses which cause respiratory infections. There are multiple
+                coronaviruses, mainly including the common cold, MERS (Middle East Respiratory Syndrome), SARS (Severe
+                Acute Respiratory Syndrome), and recently, COVID-19 (The Coronavirus, or Coronavirus 2019).
+                <br> <br>
+                COVID-19 is the recently discovered coronavirus which is also known as SARS-CoV-2. This virus was unknown until the outbreak in Wuhan,
+                China in December 2019. </p>
+            <img class="contentimg" src="i1.jpg" alt="Coronavirus" style="width:30%">
+            <div>
+                <h2 id="avoid">How To Avoid COVID-19?</h2>
+                <p> <u>If you want to both reduce spread of COVID-19 and make sure you don’t get the virus you should:
+                    </u> <br> <br>
+                    Clean your hands on a regular basis with soap and water or an alcohol based hand sanitiser/hand rub.
+                    <br> <br>
+                    Maintain at least a 1 metre distance between yourself and anyone else. Also don’t go on any form of public
+                    transportation, ride sharing or taxis. <br> <br>
+                    Always avoid touching your eyes, nose and mouth. If you happen to be carrying COVID-19 on your
+                    hands, if you were to touch your face it gives the virus a chance to enter into your body. <br> <br>
+                    Cough and sneeze into your elbow (and wash that area as soon as possible) or preferably a tissue
+                    which you can dispose of. This helps to reduce the spread of the virus so that individuals with a
+                    bad or suppressed immune system don’t catch the virus. <br> <br>
+                    If you feel unwell or align with the symptoms, stay home. This will make sure that you can’t spread
+                    any illnesses to others. <br> <br>
+                    Keep up to date on the latest COVID-19 information and hotspots (cities or local areas where
+                    COVID-19 is spreading widely). If possible, avoid traveling to these places – especially if you are
+                    an older person, have diabetes, heart or lung disease or just a bad immune system. If you do live in
+                    one of these areas, try to stay home or away from areas with large amounts of people. </p>
+                <img class="contentimg" src="wash.jpg" alt="Coronavirus">
+            </div>
+            <h2 id="symptoms" >What Are The Symptoms Of COVID-19? </h2>
+            <p><u>The symptoms of COVID-19 can often be difficult to differentiate between The Flu or The Common Cold.
+                    This means that if you get these symptoms you should contact your local GP or doctor:</u><br><br>
+                A Fever<br>
+                Coughing (similar to the flu)<br>
+                Sore Throat<br>
+                Fatigue<br>
+                Shortness Of Breath<br><br>
+                <u>In More Severe Cases You Can See:</u><br>
+                Pneumonia<br>
+                Kidney Failure<br>
+            </p>
+            <img class="contentimg" src="breath.jpg" alt="Shortness Of Breath"
+                style="box-shadow: 7px 7px rgba(0,0,0,0.5);">
+            <h2 id="spread">How Does COVID-19 Spread?</h2>
+            <p>This disease spreads from person to person and others with the virus. Droplets and fluids from the nose
+                or mouth contain the virus and are spread when a person with COVID-19 coughs or exhales. These droplets
+                land on objects and surfaces around the person. Other people then catch the virus by touching these
+                objects or surfaces, then touching their eyes, nose or mouth. People can also catch COVID-19 if they
+                breathe in these droplets from a person with COVID-19. This is the main reason for why people should
+                stay 1.5 metres away from one another so that droplets can’t spread to others.</p>
+            <img id="contentimg1" src="sneeze1.webp" alt="Sneezing" style="width: 80%;">
+            <!--NEW-->
+            <section class="mythsButtonContainer">
+                <a href="myths.html" class="button2">Myths About COVID-19</a>
+            </section>
+            <!--NEW-->
+        </div>
+        <!--OLD<a href="myths.html" class="button2">Myths About Covid-19</a>-->
+    </div>
+    </div>
+    </div>
+
+
+    <div class="footer">
+        <p>&copy; Thom Vinks 2021</p>
+    </div>
+    <script src="https://covid19api-api.glitch.me/api.js"></script>
+</body>
+
+</html>

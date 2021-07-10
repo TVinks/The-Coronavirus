@@ -1,0 +1,551 @@
+body {
+    margin: 0;
+    width: 100%
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+}
+
+#logo {
+    float: left;
+    margin-top: -6.3%;
+    margin-left: 1%;
+    height: 90px;
+    width: 6%;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    width: 99.5%;
+    height: 75px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.header h1 {
+    margin-left: -1%;
+}
+
+.button1 {
+    position: absolute;
+    float: center;
+    border-color: white;
+    background-color: rgba(145, 145, 145, 0.5);
+    color: white;
+    border: 2px solid white;
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+    padding-bottom: 0.1%;
+    padding-top: 0.1%;
+    font-size: 2em;
+    margin: 0;
+    top: 65%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.button1:hover {
+    background-color: white;
+    color: black;
+    transition: 0.1s ease-out;
+}
+
+.button2 {
+    float: center;
+    border-color: white;
+    background-color: purple;
+    color: white;
+    border: 2px solid white;
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+    padding-bottom: 0.1%;
+    padding-top: 0.1%;
+    font-size: 2em;
+    margin-left: 40%;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.button2:hover {
+    background-color: white;
+    color: black;
+    transition: 0.1s ease-out;
+    border: 2px solid black;
+}
+
+.button3 {
+    float: center;
+    border-color: white;
+    background-color: rgb(120, 0, 0);
+    color: white;
+    border: 2px solid white;
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+    padding-bottom: 0.1%;
+    padding-top: 0.1%;
+    font-size: 2em;
+    margin-left: 45%;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.button3:hover {
+    background-color: white;
+    color: black;
+    transition: 0.1s ease-out;
+    border: 2px solid black;
+}
+
+.button4 {
+    float: center;
+    border-color: white;
+    background-color: rgb(0, 177, 168);
+    color: white;
+    border: 2px solid white;
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+    padding-bottom: 0.1%;
+    padding-top: 0.1%;
+    font-size: 2em;
+    margin-left: 31%;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.button4:hover {
+    background-color: white;
+    color: black;
+    transition: 0.1s ease-out;
+    border: 2px solid black;
+}
+
+.button5 {
+    float: center;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 2px solid white;
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+    padding-bottom: 0.1%;
+    padding-top: 0.1%;
+    font-size: 2em;
+    margin-left: 31%;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.button5:hover {
+    background-color: white;
+    color: black;
+    transition: 0.1s ease-out;
+    border: 2px solid black;
+}
+
+.map-button {
+    position: absolute;
+    float: center;
+    border-color: white;
+    background-color: rgba(145, 145, 145, 0.5);
+    color: white;
+    border: 2px solid white;
+    padding-left: 1.4%;
+    padding-right: 1.4%;
+    padding-bottom: 0.1%;
+    padding-top: 0.1%;
+    font-size: 2em;
+    margin: 0;
+    top: 95%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    transition: 0.2s ease-out;
+}
+
+.map-button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.1s ease-out;
+}
+
+.link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #05a2d3;
+}
+
+/* This part is the text box*/
+.container {
+    position: relative;
+}
+
+
+.text-block {
+    position: absolute;
+    float: center;
+    background-color: rgba(117, 49, 133, 0.7);
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.2em;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#text-block1 {
+    position: absolute;
+    float: center;
+    background-color: rgba(177, 0, 0, 0.7);
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.2em;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#text-block2 {
+    position: absolute;
+    float: center;
+    background-color: rgba(0, 172, 184, 0.7);
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.2em;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#text-block3 {
+    position: absolute;
+    float: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.2em;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.map-text-block {
+    position: absolute;
+    float: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: grey;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.2em;
+    margin: 0;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#text-block-area {
+    position: absolute;
+    float: center;
+    background-color: rgba(255, 136, 0, 0.7);
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.2em;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Up to here*/
+
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 40px;
+    width: 99.25%;
+    padding: 2px;
+    border: 1px solid white;
+
+}
+
+.content {
+    width: calc(100% - 7.5%);
+    float: left;
+    padding-left: 7.5%;
+    text-align: center;
+    font-size: 20pt;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    width: calc(100% - 7.5%);
+    float: left;
+    clear: both;
+}
+
+.footer {
+    height: 50px;
+    width: 100%;
+    background-color: #bbbbbb;
+    clear: both;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 30pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(117, 49, 133, 0.7);
+    color: white;
+    box-shadow: 5px 5px rgb(86, 36, 97);
+}
+
+h3 {
+    font-size: 30pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(150, 0, 0, 0.8);
+    color: white;
+    box-shadow: 5px 5px rgb(120, 0, 0);
+}
+
+h4 {
+    font-size: 30pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(0, 172, 184, 0.7);
+    color: white;
+    box-shadow: 5px 5px rgb(0, 72, 120);
+}
+
+h5 {
+    font-size: 30pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    box-shadow: 5px 5px rgb(53, 53, 53);
+}
+
+h6 {
+    font-size: 30pt;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(255, 102, 0, 0.699);
+    color: white;
+    box-shadow: 5px 5px rgb(122, 55, 0);
+}
+
+.content img {
+    margin-top: 3%;
+    margin-bottom: 10%;
+    width: 80%
+}
+
+.contentimg {
+    margin-top: 3%;
+    margin-bottom: 10%;
+    width: 80%
+}
+
+#contentimg1 {
+    margin-bottom: 5%;
+}
+
+.second {
+    margin-bottom: -5%;
+}
+
+.dropdown_div {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_button {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.dropdown_content {
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    min-width: 180px;
+    box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.dropdown_content a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 12px 18px;
+    display: block;
+}
+
+.dropdown_content a:hover {
+    background-color: rgb(110, 110, 110);
+    color: white;
+}
+
+.dropdown_div:hover .dropdown_content {
+    display: block
+}
+
+@media screen and (max-width:992px) {
+    .slideshow_div1 {
+        width: 100%;
+        height: 55%;
+        position: static;
+    }
+
+    #logo {
+        width: 80px;
+        height: 80px;
+        margin-top: -85px;
+    }
+
+    #what {
+        margin-top: 120px;
+    }
+
+    h5,
+    h4,
+    h3 {
+        margin-top: 25%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .slideshow_div1 {
+        width: 100%;
+        height: 50%
+    }
+
+    #logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    h5,
+    h4,
+    h3 {
+        margin-top: 25%;
+    }
+}
+
+.vertical-menu {
+    height: 175px;
+    overflow-y: auto;
+    margin-left: 0px;
+    width: 100%;
+    margin-top: 3%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 0.75%;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: rgba(117, 49, 133, 0.7);
+    color: white;
+}
+
+.vertical-menu a.activered {
+    background-color: rgba(150, 0, 0, 0.8);
+    color: white;
+}
+
+.slideshow_div, .slideshow_div1 {
+    height: 125%;
+}
+
+img.slides {
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.2s ease-out;
+    z-index: -1;
+}
+
+img.slides.shown {
+    opacity: 1;
+    transition: 0.2s ease-out;
+    z-index: 0;
+}
+
+.mythsButtonContainer {
+    width: 100%;
+    height: min-content;
+    position: relative;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.mythsButtonContainer .button2,
+.mythsButtonContainer .button3,
+.mythsButtonContainer .button4,
+.mythsButtonContainer .button5 {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-size: 1.5em;
+}

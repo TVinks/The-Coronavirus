@@ -1,0 +1,117 @@
+<html>
+
+<head>
+    <title>The Coronavirus</title>
+    <link rel="stylesheet" href="theme.css" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="header">
+            <h1>THE CORONAVIRUS</h1>
+            <img id=logo src="logotrans.png" style=width:6.5%>
+        </div>
+
+        <nav>
+
+            <div class="dropdown_div">
+                <a href="index.html" class="dropdown_button"><i class="fa fa-home" style="font-size: 20px;"></i> Home</a>
+            </div>
+
+            <div class="dropdown_div">
+                <button class="dropdown_button"><i class="fa fa-info-circle" style="font-size: 18px;"></i> All You Need To Know</button>
+                <div class="dropdown_content">
+                    <a href="all.html#what">What is It?</a>
+                    <a href="all.html#avoid">How To Avoid</a>
+                    <a href="all.html#symptoms">Symptoms</a>
+                    <a href="all.html#spread">How It Spreads</a>
+                    <a href="myths.html">Myths</a>
+                    <a href="have.html#think">What To Do If You Think You Have It</a>
+                    <a href="have.html#do">What To Do If You Have It</a>
+                    <a href="like.html">Likeliness Of Catching It</a>
+                </div>
+            </div>
+
+            <div class="dropdown_div">
+                <button class="dropdown_button"><i class="fa fa-map" style="font-size: 15.5px;"></i> Geography</button>
+                <div class="dropdown_content">
+                    <a href="map.html">World Map</a>
+                    <a href="area.html#ban">Travel Ban List</a>
+                    <a href="area.html#lock">Areas Locked Down NSW</a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="slideshow_div1">
+                <img class="slides" src="L1.jpg">
+                <img class="slides" src="L2.webp">
+                <img class="slides" src="L3.jpg">
+            </div>
+
+            <script type="text/javascript">
+                var myIndex = 0;
+                function slideshow() {
+                    var item;
+                    var slides = document.getElementsByClassName("slides");
+                    for (item = 0; item < slides.length; item++) {
+                        //slides[item].style.display = "none";
+                        slides[item].classList.remove("shown"); //removes the class shown which makes it show up
+                    }
+                    myIndex++;
+                    if (myIndex > slides.length) {
+                        myIndex = 1;
+                    }
+                    // slides[myIndex - 1].style.display = "block";
+                    slides[myIndex - 1].classList.add("shown"); //adds the class shown which makes it show up
+                    setTimeout(slideshow, 4000);
+                }
+                slideshow();
+            </script>
+
+            <div id="text-block3">
+                <h1>Likeliness Of Catching Coronavirus</h1>
+            </div>
+        </div>
+    </main>
+
+    <div class="wrapper">
+        <div class="content">
+            <h5>What Is The Likeliness Of Catching Coronavirus?</h5>
+            <p> Your location will determine your chance of getting coronavirus. If you live in countries such as:
+                <br> <br>
+                The United States of America<br>
+                Switzerland<br>
+                Spain<br>
+                Italy<br>
+                Or China<br><br>
+                Your chance of getting coronavirus are greater than other nations, especially in crowded areas with little land mass. That is why it is essential for you to stay inside if the area you live in has cases of coronavirus.<br><br>
+                If you are of older age (especially those aged 80 or over) you are at much higher risk than those of younger age. That is why it is essential for you to stay inside if the virus is in your local area, for your safety and for others.
+            </p>
+            <img src="L4.jpg" alt="Coronavirus Test" style="width:60%">
+                <section class="mythsButtonContainer">
+                    <a href="map.html" class="button5">World Map Of Coronavirus Locations</a>
+                </section>
+                <!--NEW-->
+            </div>
+            <!--OLD<a href="map.html" class="button4">If You Have It</a>-->
+        </div>
+    </div>
+    </div>
+
+
+    <div class="footer">
+        <p>&copy; Thom Vinks 2021</p>
+    </div>
+    <script src="https://covid19api-api.glitch.me/api.js"></script>
+</body>
+
+</html>

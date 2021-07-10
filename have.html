@@ -1,0 +1,146 @@
+<html>
+
+<head>
+    <title>The Coronavirus</title>
+    <link rel="stylesheet" href="theme.css" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="sticky">
+        <div class="header">
+            <h1>THE CORONAVIRUS</h1>
+            <img id=logo src="logotrans.png" style=width:6.5%>
+        </div>
+
+        <nav>
+
+            <div class="dropdown_div">
+                <a href="index.html" class="dropdown_button"><i class="fa fa-home" style="font-size: 20px;"></i> Home</a>
+            </div>
+
+            <div class="dropdown_div">
+                <button class="dropdown_button"><i class="fa fa-info-circle" style="font-size: 18px;"></i> All You Need To Know</button>
+                <div class="dropdown_content">
+                    <a href="all.html#what">What is It?</a>
+                    <a href="all.html#avoid">How To Avoid</a>
+                    <a href="all.html#symptoms">Symptoms</a>
+                    <a href="all.html#spread">How It Spreads</a>
+                    <a href="myths.html">Myths</a>
+                    <a href="have.html#think">What To Do If You Think You Have It</a>
+                    <a href="have.html#do">What To Do If You Have It</a>
+                    <a href="like.html">Likeliness Of Catching It</a>
+                </div>
+            </div>
+
+            <div class="dropdown_div">
+                <button class="dropdown_button"><i class="fa fa-map" style="font-size: 15.5px;"></i> Geography</button>
+                <div class="dropdown_content">
+                    <a href="map.html">World Map</a>
+                    <a href="area.html#ban">Travel Ban List</a>
+                    <a href="area.html#lock">Areas Locked Down NSW</a>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="slideshow_div1">
+                <img class="slides" src="H1.webp">
+                <img class="slides" src="H2.webp">>
+            </div>
+
+            <script type="text/javascript">
+                var myIndex = 0;
+                function slideshow() {
+                    var item;
+                    var slides = document.getElementsByClassName("slides");
+                    for (item = 0; item < slides.length; item++) {
+                        //slides[item].style.display = "none";
+                        slides[item].classList.remove("shown"); //removes the class shown which makes it show up
+                    }
+                    myIndex++;
+                    if (myIndex > slides.length) {
+                        myIndex = 1;
+                    }
+                    // slides[myIndex - 1].style.display = "block";
+                    slides[myIndex - 1].classList.add("shown"); //adds the class shown which makes it show up
+                    setTimeout(slideshow, 4000);
+                }
+                slideshow();
+            </script>
+
+            <div id="text-block2">
+                <h1>If You Think You Have Coronavirus</h1>
+            </div>
+        </div>
+    </main>
+
+    <div class="wrapper">
+        <div class="content">
+            <h4 id="think">What To Do If You Think You Have It</h4>
+            <p> If you show symptoms of:
+                <br> <br>
+                A Fever<br>
+                Coughing (similar to the flu)<br>
+                Sore Throat<br>
+                Fatigue<br>
+                Shortness Of Breath<br>
+                Or if you have been in contact with anyone who may have Coronavirus, ie. someone who has come back from
+                a trip of some sort where they may have come in contact with someone with COVID, if you have gone to a 
+                gathering of people such as a mall where someone with COVID has also attended as well. You should contact
+                <u>1800 020 080</u>, which operates 24/7 and will advise you on what to do about it. You can also call
+                this number if you have any questions about the virus as well. It is also adviced that you get tested at your
+                local COVID testing clinic to determine whether or not you have the virus.<br><br><br>
+                <u>If you believe you should see a doctor, call ahead of time to book an appointment.</u> <br><br>
+                You will be asked to take precautions when you attend for treatment. Follow the instructions you are
+                given.<br><br>
+                If you have a mask, wear it to protect others. Stay at least 1.5 metres away from other people. Cover
+                your coughs or sneezes with your elbow.<br><br><br>
+                <u>Tell the doctor about:</u><br><br>
+                Your symptoms<br>
+                Any recent contact with someone who may have it<br><br>
+                Your doctor will tell you if you should be tested. They will arrange the test for you. <br><br><br>
+                It will take a few days until the results come back.<br><br>
+                If you have serious symptoms you will be kept in hospital and isolated from other patients to prevent
+                the virus spreading. <br><br>
+                If your doctor says you are well enough to go home while you wait for your test results, you should
+                self-isolate at home and do not attend work or school.<br><br>
+                Apple has also created <a class="link" href="https://www.apple.com/covid19/" target="_blank">a
+                    website</a> which can decide whether you may have coronavirus and whether or not you should see a
+                doctor for a test.
+            </p>
+            <img src="H4.jpg" alt="Coronavirus Test" style="width:60%">
+            <div>
+                <h4 id="do">What To Do If You Do Have It</h4>
+                <p>If you do have coronavirus and the test comes back positive for it, you need to self isolate and stay
+                    at home. If you really need to go outside then make as many precautions as possible, where a mask
+                    and attempt to distance yourselves away from others as much as possible. If this is not done there is a 
+                    large possibility that the virus will spread among your community if it is currently unvaccinated, there 
+                    is also a possibility that the virus will spread to someone at risk, potensially resulting in their death.
+                </p>
+                <img src="H5.webp" alt="Stay At Home" style="width:70%">
+                <section class="mythsButtonContainer">
+                    <a href="like.html" class="button4">Likeliness Of You Catching Coronavirus</a>
+                </section>
+                <!--NEW-->
+            </div>
+            <!--OLD<a href="like.html" class="button4">Likeliness Of You Catching Coronavirus</a>-->
+        </div>
+    </div>
+    </div>
+
+
+    <div class="footer">
+        <p>&copy; Thom Vinks 2021</p>
+    </div>
+    <script src="https://covid19api-api.glitch.me/api.js"></script>
+</body>
+
+</html>
